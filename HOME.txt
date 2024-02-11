@@ -1,0 +1,413 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Agriculture E-commerce</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #013220;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        header:hover {
+            background-color: #444; /* Light color change on hover */
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ddd; /* Color change on hover */
+        }
+
+        header .contact-options {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header .contact-options a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+            transition: color 0.3s;
+        }
+
+        header .contact-options a:hover {
+            color: #ddd; /* Color change on hover */
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-detail {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-detail img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            max-width: 200px; /* Adjusted max-width for smaller size */
+            height: auto;
+        }
+
+        .product-detail h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-detail .price {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-detail p {
+            color: #777;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .product-detail .btn-buy {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-detail .btn-buy:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .slideshow-container {
+            width: 100%;
+            max-width: 600px; /* Adjusted maximum width */
+            margin: auto;
+            overflow: hidden; /* Hide overflow to prevent image cropping */
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Maintain aspect ratio without cropping */
+            max-height: 400px; /* Adjusted max-height for medium size */
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Krishi Bazzar (E-bazzar)</h1>
+        <nav>
+            <ul>
+                <li><a href="homefinal.html">Home</a></li>
+                <li><a href="productfinal.html">Products</a></li>
+                <li><a href="aboutfinal.html">About</a></li>
+                <li><a href="contactfinal.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-options">
+            <a href="https://wa.me/9826769362" target="_blank">WhatsApp</a>
+            <a href="https://www.facebook.com/bibashorg" target="_blank">Facebook</a>
+            <a href="https://m.me/bibashorg" target="_blank">Messenger</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFp67JV71_Bz56BKrGkmmLQBblozYIPmL4cXRCd5oHqB_DoC_e0SLYQVEWACUTzvqNpouO_Ugs__z3bpH7STQMpzQd870ohZRQzRwJHGP2IIxrCjgRjc-6FDeAEyF3fPffnIE6QCfB7T0Kg0UywAR3qn_TN9WBmOzb6HMvdzGLflDkniV9aBQCK5Y5HKg/s160/download%20(2).jpeg" alt="Image 1">
+            </div>
+
+            <div class="mySlides fade" style="display: none;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1JGuRyaqi_OtdWtMHPj8eNMO6-LN0gRl6cQZF8Mz9D-5dwnPOApWoOkzCS9RLwksXOJ7WqOc6MleQvG8L58QKohRZz4aAB6Ea6V0Zb0BzUNgiMsXksdMskVnb7l5HtLsVMi0BGCuRyWGNE1UXRJCLZ_Y-0V8hPcdf6KcbhiUArH-aPpzi5kyRNcAT6Y0/s1600/download%20(3).jpeg" alt="Image 2">
+            </div>
+
+            <div class="mySlides fade" style="display: none;">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ6yqv0vifhJSlGYiZoK89DKflDbwtohrK_bJPJ2kixRaTU9bGVFY6Od2wr7KZJFgIU5u69lChIeYCTHazGF5xhWMxrZDCspkQ6dh7gyiUT5JDBO7rULKMNY7AdAfccspocymc_ba9AArmsba-IGt-YeqNmyhVuGof6fnlJnNEL3ywgQX4vdq9ooJ3JUU/w640-h596/agrotis-bund-former-bed-maker-1000x1000.webp" alt="Image 3">
+            </div>
+        </div>
+
+        <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+
+  <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+ <div class="product-detail">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlp2M3394j2SBkqObubahyphenhyphenabICRB8vjfBk0b30DOzr7RmQpOVudLxXi8IU8R-pbd3gGgsEb_vXZXvMBhTv-JuJgUM4w2AvfP9YfFoKK8zi2EMasR6_QP9FEYKLZAxWbaPJa-dRHBfOMG-K2RQ8UNBqBJhk0QmX-1lrU8tBni6C4NdKI2ENuO5cK4Y54f4/s500/logo.jpg" alt="Product Name">
+            <h2>AGRICULTURE EQUIPMENT</h2>
+            <p class="price">रू 1500/-</p>
+            <p>Discover our affordable, lightweight agricultural equipment, crafted with uncompromising quality. From handheld tools to mechanized machinery, our products are designed to optimize performance and enhance productivity in the field.</p>
+            <button class="btn-buy" onclick="buyNow('Product Name', 'Product Price')">Buy Now</button>
+        </div>
+        <!-- Repeat the product detail section as needed -->
+
+    </main>
+
+    <footer>
+        <p>© 2024 Agriculture E-commerce. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to redirect to WhatsApp with product information
+        function buyNow(productName, productPrice) {
+            const message = `I want to buy ${productName} for ${productPrice}. Please provide more details.`;
+            const phoneNumber = '9826769362';
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body></html>
